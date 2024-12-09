@@ -1,0 +1,63 @@
+body{
+	background-color : ;
+}
+header img{
+	width: 100%;
+	height: auto; /* pour rendre une image responsive cad ajustable de l'écran */
+}	
+nav{
+	border : 1px solid black;
+	height : 30px;
+	background-color : #333	;
+}
+
+nav ul {
+	list-style-type : none;/* pour surpprimer les puces */
+	margin : 0;/* Marge extérieure */
+	padding : 0; /* Marge intérieure  */
+}
+nav ul li{
+	background-color: #333;
+	border: 0px solid blue;
+	width : 150px;
+	float: left;
+	
+}/* li est un élément en bloc, c'est à dire qu'elle occupe tout espace/élément parent */
+nav ul li a{
+	color: white;
+	text-decoration: none;/* pour se débarasser du soulignement du lien */
+	text-align: center;
+	height: 30px;
+	line-height: 30px;/* pour centrer verticalement */
+	border : 0px solid green;
+	width : 150px;/* a est un élément in line
+	, c'est à dire pas en bloc, le problème des éléments in line c'est qu'on ne peut pas modifier sa largeur. Il faut changer sa nature d'affichage */
+	display: block;/* display = affichage */
+}
+nav ul li ul{
+	display: none;
+}
+nav ul li:hover ul{
+	display: block;
+}
+nav ul li a:hover{
+	background-color: yellow;
+	color: black;
+}
+
+section{
+	border: 1px solid black;
+	margin-top: 50px;
+	width: 70%;
+	margin: 50px auto 0  auto;
+	padding: 0 20px 0 20px;/* padding = rembpurage doublure marge inétrieur*/
+	border-radius:20px;
+	box-shadow:5px 5px 5px pink; /* 1er ombre horizon 2er ombre verticale 3er intensite  */
+}
+
+.brand-img {
+    width: 100%;
+    height: auto;
+    max-width: 100px; /* 根据需要调整 */
+    border-radius: 50%; /* 可选：使图片圆形 */
+}
