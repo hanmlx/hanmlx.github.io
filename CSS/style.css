@@ -1,15 +1,33 @@
 body{
-	background-color : ;
+	background-color :#ffffff ;
 }
 header img{
 	width: 100%;
-	height: auto; /* pour rendre une image responsive cad ajustable de l'écran */
+	height: 250px; /* pour rendre une image responsive cad ajustable de l'écran */
+	object-fit: cover; /* 保持图片比例并覆盖整个容器 */
+    opacity: 0.5; /* 设置透明度，0.7 表示70% 不透明 */
 }	
+
 nav{
 	border : 1px solid black;
 	height : 30px;
 	background-color : #333	;
 }
+
+
+.navbar-nav.brand {
+    position: absolute;
+    top: 20px; /* 调整位置到顶部 */
+    left: 20px; /* 距离左侧 20px */
+    display: flex;
+    align-items: center;
+    list-style: none; /* 移除列表样式 */
+    padding: 0;
+    margin: 0;
+}
+
+
+
 
 nav ul {
 	list-style-type : none;/* pour surpprimer les puces */
@@ -17,12 +35,12 @@ nav ul {
 	padding : 0; /* Marge intérieure  */
 }
 nav ul li{
-	background-color: #333;
-	border: 0px solid blue;
-	width : 150px;
-	float: left;
-	
+    background-color: #333;
+    border: 0px solid blue;
+    width : 150px;
+    float: left;
 }/* li est un élément en bloc, c'est à dire qu'elle occupe tout espace/élément parent */
+
 nav ul li a{
 	color: white;
 	text-decoration: none;/* pour se débarasser du soulignement du lien */
@@ -55,9 +73,27 @@ section{
 	box-shadow:5px 5px 5px pink; /* 1er ombre horizon 2er ombre verticale 3er intensite  */
 }
 
-.brand-img {
-    width: 100%;
-    height: auto;
-    max-width: 100px; /* 根据需要调整 */
-    border-radius: 50%; /* 可选：使图片圆形 */
+.brand-img img {
+    width: 80px; /* 根据需要调整大小 */
+    height: 80px;
+    border-radius: 20%; /* 使头像圆形 */
+    border: 2px solid #fff; /* 可选：添加白色边框 */
+    margin-right: 15px; /* 头像与文本之间的间距 */
+	opacity: 1; /* 确保头像没有透明度 */
+}
+
+@media (max-width: 768px) {
+    .navbar-nav.brand {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        width: 100%;
+    }
 }
