@@ -1,38 +1,53 @@
-<!doctype html>
-<html>
-	<head>
-		<title> matteo site portfolio</title>
-		<meta charset = "UTF-8">
-		<link rel = "stylesheet" type = "text/css" href = "CSS/style.css" >
-	</head>
-	<body>
-		<div id = "conteneur">
-			<header>
-				<ul class="navbar-nav brand">
-					<li class="brand-img">
-						<img src="Img/avatar.jpg" alt="Avatar">
-					</li>
-					<li class="brand-txt">
-						<h5 class="brand-title">Matteo CAI</h5>
-						<div class="brand-subtitle">data analyst</div>
-					</li>
-				</ul>
-				<div class="header-image">
-					<img src="Img/banniere.jpg" alt="data"> <!-- inserer l'image dans le header -->
-				</div>
-			</header>
-			<nav> 
-				<ul> 
-					<li> 
-						<a href = "index.html">Accueil </a>
-					</li>
-				</ul>
-			</nav>
-			<section>
-				<h1> Bienvenue </h1> <!--titre de niveau 1dans le corp du texte-->
-				<p>"Actuellement étudiante en deuxième année de BUT Sciences des données (ex STID) à l'IUT de Paris Rives de Seine 75016, je recherche une alternance d'une durée d’1 an à partir de septembre 2024 me permettant de mettre en pratique mes compétences et acquérir une expérience professionnelle pertinente. Ma formation me permet d'acquérir des compétences en Statistiques et en Informatique décisionnelle enrichis à travers divers projets. Sérieuse et motivée, je suis capable de travailler en autonomie comme en équipe"</p>
-				<br>
-			</section>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etudiant Formation SD</title>
+    <!-- 引入 Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Accueil</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="projet.html">Projet</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Français
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item active" href="#">Français</a>
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">中文</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="left-column">
+            <img src="img/portrait.png" alt="Profile Picture" class="profile-pic">
+            <h2>ETUDIAN FORMATION SD</h2>
+            <button class="btn btn-primary">Me contacter</button>
+        </div>
+        <div class="right-column">
+            <h1>ACCUEIL</h1>
+            <p>💬 : Je suis actuellement étudiant en Science des données à l'IUT Rives de Seine, avec une spécialisation dans le domaine de la data.</p>
+            <p>💆 : Je suis particulièrement intéressé par les jeux vidéo, en particulier les FPS (jeux de tir à la première personne) et les jeux en monde ouvert (open world). En ce qui concerne la musique, j'apprécie les genres R&B et CPOP. J'aime aussi voyager et découvrir de nouveaux pays.</p>
+            <a href="files/cv_matteo_cai.pdf" target="_blank" class="btn btn-secondary">CV</a>
+        </div>
+    </div>
+    <!-- 引入 Bootstrap JS 和 jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
