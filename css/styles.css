@@ -146,6 +146,7 @@ h1, h2 {
 .btn:hover {
     background-color: #555;
 }
+<<<<<<< HEAD
 
 .btn-secondary {
     background-color: #333;
@@ -155,3 +156,5 @@ h1, h2 {
 .btn-secondary:hover {
     background-color: #555;
 }
+=======
+>>>>>>> 21b0760144a52d5f7b6fc40ce077956c0e9f7cb5
