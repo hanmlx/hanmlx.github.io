@@ -1,11 +1,29 @@
 body {
+    padding-top: 60px; /* 确保内容不会被固定的导航栏遮挡 */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
+
+
+
+/* -------------------------------------------------nav bar */
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------- */
+
+
+
+
 .container {
+    padding-top: 60px; /* 确保内容不会被固定的导航栏遮挡 */
     display: flex;
     justify-content: center; /* 水平居中 */
     align-items: center; /* 垂直居中 */
@@ -13,7 +31,7 @@ body {
     margin: 0 auto;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 200px; /* 增加底部外边距 */
+    margin-bottom: 150px; /* 增加底部外边距 */
 }
 
 .left-column, .right-column {
@@ -146,7 +164,6 @@ h1, h2 {
 .btn:hover {
     background-color: #555;
 }
-<<<<<<< HEAD
 
 .btn-secondary {
     background-color: #333;
@@ -156,5 +173,3 @@ h1, h2 {
 .btn-secondary:hover {
     background-color: #555;
 }
-=======
->>>>>>> 21b0760144a52d5f7b6fc40ce077956c0e9f7cb5
