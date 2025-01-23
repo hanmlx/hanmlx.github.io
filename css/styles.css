@@ -9,16 +9,6 @@ body {
 
 
 
-/* -------------------------------------------------nav bar */
-
-
-
-
-
-
-
-/* ----------------------------------------------------------------- */
-
 
 
 
@@ -149,6 +139,94 @@ h1, h2 {
     font-size: 1em;
     margin-bottom: 20px;
 }
+
+
+
+
+
+
+
+.project-card {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+/* 修改模态框内容的对齐方式 */
+.modal-body {
+    text-align: left; /* 设置内容左对齐 */
+    padding: 20px; /* 调整内边距 */
+    flex: 1; /* 让内容占据剩余空间 */
+}
+
+.modal-title {
+    text-align: center; /* 保持标题居中对齐 */
+    margin-bottom: 20px; /* 添加一些间距 */
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6; /* 添加底部边框 */
+    padding: 15px; /* 调整内边距 */
+}
+
+.modal-content {
+    height: 100%; /* 让内容填充整个模态框 */
+    overflow-y: auto; /* 添加垂直滚动条，防止内容溢出 */
+    border-radius: 30px; /* 移除圆角，可选 */
+    display: flex;
+    flex-direction: column; /* 垂直排列内容 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn {
     padding: 10px 20px;
