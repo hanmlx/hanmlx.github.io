@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生培训 SD</title>
+    <!-- 引入 Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index_cn.html">首页</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="切换导航">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="projet_cn.html">项目</a>
+                </li>
+                
+                <li>
+                    <a class="nav-link" href="competences_cn.html">技能</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="Parcours_cn.html">学习生涯</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        中文
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item active" href="../../projet.html">🇫🇷 Français</a>
+                        <a class="dropdown-item" href="../en/projet_en.html">🇬🇧 English</a>
+                        <a class="dropdown-item" href="projet_cn.html">🇨🇳 中文</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-section">
+        <h1 class="project-title">项目</h1>
+        <hr class="project-separator">
+    
+        <div class="container">
+            <div class="row">
+                <!-- 项目 1 -->
+                <div class="col-md-4">
+                    <div class="card project-card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">癌症治疗技术研究</h2>
+                            <p class="card-text">从四月到六月，我和我的团队进行了一项有趣的项目，旨在评估一种特定癌症治疗技术的有效性。</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project1Modal">
+                                了解更多
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 项目 2 -->
+                <div class="col-md-4">
+                    <div class="card project-card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">LB AXA BOS银行集团数据库的设计与实施</h2>
+                            <p class="card-text">
+                                该项目涉及为LB AXA BOS银行集团在合并后设计和实施数据库。我们学会了使用时间表来组织工作，确保按时完成任务。
+                            </p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project2Modal">
+                                了解更多
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 项目 3 -->
+                <div class="col-md-4">
+                    <div class="card project-card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">在线商务数据集的研究与设计</h2>
+                            <p class="card-text">
+                                该项目深入分析了在线购买行为，利用来自多个来源的数据识别在线产品的最大消费者。
+                            </p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project3Modal">
+                                了解更多
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 项目 1 的弹出框 -->
+        <div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="project1ModalLabel">癌症治疗技术研究</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p><em>团队成员: Matteo, Mathias, Macram, William</em></p>
+                        <p> 日期: 2024年3月 - 6月</p>
+                        <p>该项目涉及研究一种特定治疗技术在癌症治疗中的有效性，数据由一家美国医院提供。我们学会了使用时间表来组织工作，确保按时完成任务。</p>
+                        <p>从三月到六月，我和我的团队进行了一项有趣的项目，旨在评估这种癌症治疗技术的有效性。</p>
+                        <h3>主要目标</h3>
+                        <p>我们的目标是确定给定的治疗技术是否对癌症患者有效。</p>
+                        <h3>方法论与工具</h3>
+                        <p>为了完成这个项目，我们使用了<strong>R编程语言</strong>进行数据清理和分析。</p>
+                        <h4>关键步骤</h4>
+                        <ol>
+                            <li><strong>组织与计划</strong>: 我们设置了详细的时间表来管理任务并确保按时完成。</li>
+                            <li><strong>数据清理</strong>: 我们识别并修正了错误和异常，确保数据可靠。</li>
+                            <li><strong>统计分析</strong>: 我们应用统计方法评估治疗技术与患者结果之间的相关性。</li>
+                        </ol>
+                        <h3>挑战与解决方案</h3>
+                        <p><strong>远程工作</strong>：文件同步造成了问题，使得合作更加复杂。</p>
+                        <p><strong>统计分析：</strong>图形分析，尤其是热图，最初遇到了挑战。通过我们的教授的帮助，我们克服了这些障碍，并深化了理解。</p>
+    
+                        <h3>开发的技能</h3>
+                        <ul>
+                            <li>R编程</li>
+                            <li>统计学</li>
+                            <li>合作与组织</li>
+                        </ul>
+                        <h3>结果与结论</h3>
+                        <p>结果表明，该技术在心脏病患者中的死亡率降低了14%，显示出该技术在这一群体中的有效性。然而，对于有血管问题或曾患心脏病的患者来说，治疗似乎增加了死亡率。总体而言，尽管接受此技术治疗的患者初始预后较差，但治疗在血压和心率等变量上没有显著差异。这些结果凸显了在选择患者进行该治疗时的谨慎。</p>
+                        <a href="https://github.com/hanmlx/SAE-projet_reporting_et_datavisualisation" target="_blank" class="btn btn-primary">查看 GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 项目 2 的弹出框 -->
+        <div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="project2ModalLabel">LB AXA BOS银行集团数据库的设计与实施</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p><em>团队成员: Matteo CAI, Bilal KHAFIFI AZZAOUI, William LEFEBVRE, Célia ZUK</em></p>
+                        <p> 日期: 2024年4月 - 6月</p>
+                        <p>该项目涉及为LB AXA BOS银行集团在合并后设计和实施数据库。我们学会了使用时间表来组织工作，确保按时完成任务。</p>
+                        <p>从四月到六月，我们的团队开展了一项有趣的项目，旨在组织数据，导入数据，验证数据，并解决人员需求预测的问题。</p>
+                        
+                        <h3>主要目标</h3>
+                        <p>我们的目标是组织数据，导入数据，验证数据，并解决人员需求预测的问题。该项目的目标是通过提高3%的生产率来提升员工效率。</p>
+                        
+                        <h3>方法论与工具</h3>
+                        <p>在这个项目中，我们使用了以下工具：
+                            <ul>
+                                <li><strong>Microsoft Access</strong> 用于设计和管理数据库。</li>
+                                <li><strong>Excel</strong> 用于准备和转换数据。</li>
+                                <li><strong>SQL</strong> 用于查询和数据分析。</li>
+                            </ul>
+                        </p>
+                        
+                        <h4>关键步骤</h4>
+                        <ol>
+                            <li><strong>组织与计划</strong>: 我们设置了详细的时间表来管理任务并确保按时完成。</li>
+                            <li><strong>原始文件分析</strong>: 我们分析了原始文件，识别不必要的列和数据并进行转换。</li>
+                            <li><strong>数据转换</strong>: 我们转换了数据格式，以便更容易导入（例如，将文本格式转换为数字）。</li>
+                            <li><strong>数据加载</strong>: 我们将数据导入到Access中，并检查是否有潜在的错误。</li>
+                            <li><strong>异常识别与修正</strong>: 我们识别并修正了多个异常，比如关闭的企业仍在运营的问题。</li>
+                            <li><strong>结果分析</strong>: 我们计算了生产率，并预测了人员需求，以实现3%的生产率增长。</li>
+                        </ol>
+                        
+                        <h3>挑战与解决方案</h3>
+                        <p><strong>远程工作</strong>: 文件同步造成了问题，使得合作更加复杂。我们使用了在线协作工具来实时共享文件和更新。</p>
+                        <p><strong>统计分析</strong>: 数据分析，尤其是复杂查询</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- 项目3的模态框 -->
+<div class="modal fade" id="project3Modal" tabindex="-1" role="dialog" aria-labelledby="project3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="project3ModalLabel">Collect Auto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><em>团队成员：Matteo CAI, Diego CASAS, Leo UNITE</em></p>
+                <p>日期：2024年12月 - 2025年1月</p>
+
+                <p>该项目涉及对在线购买行为的深入分析，使用来自不同来源的数据来识别在线产品的主要消费者。</p>
+                <p>在这个项目中，我们使用了多种数据来源，以全面了解消费者的个人资料以及最受欢迎的产品。</p>
+
+                <h3>主要目标</h3>
+                <p>我们的目标是回答这个问题：“谁是在线产品的主要消费者？”我们分析了数据，识别了消费趋势和最受欢迎的产品。</p>
+
+                <h3>方法和工具</h3>
+                <p>在这个项目中，我们使用了以下工具：
+                    <ul>
+                        <li><strong>Dataset Search</strong> 用于寻找相关的外部数据集。</li>
+                        <li><strong>Kaggle</strong> 用于获取如2024年香水电商数据集和电商客户行为数据集等数据集。</li>
+                        <li><strong>Power BI</strong> 用于数据可视化和分析。</li>
+                    </ul>
+                </p>
+
+                <h4>关键步骤</h4>
+                <ol>
+                    <li><strong>组织与规划</strong>：我们制定了详细的日程安排，以便管理任务并按时完成。</li>
+                    <li><strong>数据提取</strong>：我们从多个来源提取数据，包括Kaggle和Dataset Search。</li>
+                    <li><strong>数据转换</strong>：我们清洗并转换数据，以便于使用。</li>
+                    <li><strong>数据加载</strong>：我们将数据加载到数据仓库中，进行结构化分析。</li>
+                    <li><strong>分析与可视化</strong>：我们使用Power BI创建可视化图表和仪表盘。</li>
+                </ol>
+
+                <h3>挑战与解决方案</h3>
+                <p><strong>数据集成</strong>：来自不同来源的数据合并时，面临格式和粒度方面的挑战。我们使用公共键将表格关联起来，确保一致的分析。</p>
+                <p><strong>统计分析</strong>：数据分析，特别是创建复杂的可视化图表时，最初存在挑战。我们通过使用Power BI和文档解决了这些问题，并加深了理解。</p>
+
+                <h3>开发的技能</h3>
+                <ul>
+                    <li>使用Kaggle和Dataset Search</li>
+                    <li>数据清洗和转换</li>
+                    <li>使用Power BI进行数据可视化</li>
+                    <li>协作和组织能力</li>
+                </ul>
+
+                <h3>结果与结论</h3>
+                <p>结果显示，最受欢迎的在线产品是香水、视频游戏和电子产品。分析的数据还揭示了根据地理区域和人口群体的不同消费趋势。</p>
+                <p>创建的可视化图表有助于识别最活跃的消费者群体和畅销产品。这些分析对于优化销售策略和改善客户体验至关重要。</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
