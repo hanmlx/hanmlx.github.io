@@ -106,6 +106,56 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
+.row {
+    margin-bottom: 20px;
+}
+
+.col-md-4 {
+    margin-top: 20px;
+}
+
+.skill-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+}
+
+.skill-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.skill-desc {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.skill-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skill-icon i {
+    font-size: 3em;
+    margin-right: 10px;
+    color: #007bff;
+}
+
+
+
+
+
+
+
+
 /* Project section */
 .project-section {
     width: 80%;
