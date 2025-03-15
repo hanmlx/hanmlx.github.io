@@ -1,47 +1,145 @@
-<!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>学生培训 SD</title>
-    <!-- 引入 Bootstrap CSS -->
+    <title>Etudiant Formation SD</title>
+    <!-- Bootstrap 4.5.2 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .parcours-block {
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 1px solid rgba(0,0,0,0.125);
+            border-radius: 0.25rem;
+            margin-bottom: 1rem;
+        }
+        .parcours-block:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+        }
+        .collapse-icon {
+            transition: transform 0.3s;
+        }
+        .parcours-block[aria-expanded="true"] .collapse-icon {
+            transform: rotate(180deg);
+        }
+        .detail-card {
+            background: #f8f9fa;
+            border-radius: 0 0 0.25rem 0.25rem;
+        }
+    </style>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index_cn.html">首页</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="切换导航">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="projet_cn.html">项目</a>
-                </li>
-                
-                <li>
-                    <a class="nav-link" href="competences_cn.html">技能</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="Parcours_cn.html">学习生涯</a>
-                </li>
+    <body>
+        <!-- 导航栏（保持原样） -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index_cn.html">Accueil</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="projet_cn.html">Projet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="competences_cn.html">Competences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Parcours_cn.html">Parcours</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            中文
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item active" href="../../Parcours.html">🇫🇷 France</a>
+                            <a class="dropdown-item" href="../en/Parcours_en.html">🇬🇧 English</a>
+                            <a class="dropdown-item" href="Parcours_cn.html">🇨🇳 中文</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        英语
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item active" href="../../index.html">🇫🇷 Français</a>
-                        <a class="dropdown-item" href="index_en.html">🇬🇧 Ennglish</a>
-                        <a class="dropdown-item" href="../cn/index_cn.html">🇨🇳 中文</a>
+    <div class="container mt-4">
+        <!-- 数据科学本科 -->
+        <div class="card parcours-block" data-toggle="collapse" data-target="#detail2023" aria-expanded="false">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h4 class="card-title">数据科学本科 (BUT)</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">2023 - 2026</h6>
+                        <p class="card-text">
+                            <i class="fas fa-map-marker-alt"></i>
+                            巴黎大学理工学院 - 塞纳河畔校区
+                        </p>
                     </div>
-                </li>
-            </ul>
+                    <i class="fas fa-chevron-down collapse-icon"></i>
+                </div>
+            </div>
+            <div class="collapse" id="detail2023">
+                <div class="card-footer detail-card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>项目详情</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt text-primary"></i> 
+                                    <a href="https://www.google.com/maps/place/IUT+de+Paris+-+Rives+de+Seine+-+Universit%C3%A9+Paris+Cit%C3%A9/@48.8420268,2.2652871,16z/data=!3m2!4b1!5s0x47e67abe04802425:0xd644f5717cd8a1b9!4m6!3m5!1s0x47e67abe049465cd:0x497f02af0718f372!8m2!3d48.8420233!4d2.267862!16s%2Fg%2F12b02lv9g?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                        巴黎十六区凡尔赛大道143号
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </li>
+                                <li><i class="fas fa-certificate text-primary"></i> 三年制本科文凭</li>
+                                <li><i class="fas fa-database text-primary"></i> 数据科学专业</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
 
-    <!-- 文本翻译部分 -->
-    <p>还未完成</p> <!-- "pas encore terminer" translated as "还未完成" -->
+        <!-- 技术高中会考 -->
+        <div class="card parcours-block" data-toggle="collapse" data-target="#detail2021" aria-expanded="false">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h4 class="card-title">STI2D 技术高中会考文凭</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">2021 - 2023</h6>
+                        <p class="card-text">
+                            <i class="fas fa-map-marker-alt"></i>
+                            夏普塔尔高中
+                        </p>
+                    </div>
+                    <i class="fas fa-chevron-down collapse-icon"></i>
+                </div>
+            </div>
+            <div class="collapse" id="detail2021">
+                <div class="card-footer detail-card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>项目详情</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt text-primary"></i> 
+                                    <a href="https://www.google.com/maps/place/Lyc%C3%A9e+Chaptal/@48.8817381,2.3171,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66fb47280d8f1:0xe5a3c9af53725160!8m2!3d48.8817346!4d2.3196749!16s%2Fg%2F120t4923?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                        巴黎八区巴蒂尼奥勒大道45号
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </li>
+                                <li><i class="fas fa-microchip text-primary"></i> 信息系统与数字专业</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 保持Bootstrap依赖不变 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

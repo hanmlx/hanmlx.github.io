@@ -4,37 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etudiant Formation SD</title>
-    <!-- 引入 Bootstrap CSS -->
+    <!-- Bootstrap 4.5.2 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .parcours-block {
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 1px solid rgba(0,0,0,0.125);
+            border-radius: 0.25rem;
+            margin-bottom: 1rem;
+        }
+        .parcours-block:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+        }
+        .collapse-icon {
+            transition: transform 0.3s;
+        }
+        .parcours-block[aria-expanded="true"] .collapse-icon {
+            transform: rotate(180deg);
+        }
+        .detail-card {
+            background: #f8f9fa;
+            border-radius: 0 0 0.25rem 0.25rem;
+        }
+    </style>
 </head>
 <body>
+    <!-- 导航栏（保持原样） -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index_en.html">Home</a>
+        <a class="navbar-brand" href="index_en.html">Accueil</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="projet_en.html">Project</a>
+                    <a class="nav-link" href="projet_en.html">Projet</a>
                 </li>
-                
-                <li>
-                <a class="nav-link" href="competences_en.html"> skills</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="competences_en.html">Competences</a>
                 </li>
-                <li>
-                    <a class="nav-link" href="Parcours_en.html"> Course</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="Parcours_en.html">Parcours</a>
                 </li>
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         English
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item active" href="../../index.html">🇫🇷 France</a>
-                        <a class="dropdown-item" href="index_en.html">🇬🇧 English</a>
-                        <a class="dropdown-item" href="../cn/index_cn.html">🇨🇳 中文</a>
+                        <a class="dropdown-item active" href="../../Parcours.html">🇫🇷 France</a>
+                        <a class="dropdown-item" href="../en/Parcours_en.html">🇬🇧 English</a>
+                        <a class="dropdown-item" href="../cn/Parcours_cn.html">🇨🇳 中文</a>
                     </div>
                 </li>
             </ul>
@@ -42,4 +64,90 @@
     </nav>
 
     
-    pas encore terminer
+    <div class="container mt-4">
+        <!-- Data Science Bachelor -->
+        <div class="card parcours-block" data-toggle="collapse" data-target="#detail2023" aria-expanded="false">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h4 class="card-title">Bachelor in Data Science</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">2023 - 2026</h6>
+                        <p class="card-text">
+                            <i class="fas fa-map-marker-alt"></i>
+                            IUT de Paris - Rives de Seine
+                        </p>
+                    </div>
+                    <i class="fas fa-chevron-down collapse-icon"></i>
+                </div>
+            </div>
+            <div class="collapse" id="detail2023">
+                <div class="card-footer detail-card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Program Details</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt text-primary"></i> 
+                                    <a href="https://www.google.com/maps/place/IUT+de+Paris+-+Rives+de+Seine+-+Universit%C3%A9+Paris+Cit%C3%A9/@48.8420268,2.2652871,17z/data=!3m2!4b1!5s0x47e67abe04802425:0xd644f5717cd8a1b9!4m6!3m5!1s0x47e67abe049465cd:0x497f02af0718f372!8m2!3d48.8420233!4d2.267862!16s%2Fg%2F12b02lv9g?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                        143 Av. de Versailles, 75016 Paris
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </li>
+                                <li><i class="fas fa-certificate text-primary"></i> Bac+3 Degree</li>
+                                <li><i class="fas fa-database text-primary"></i> Data Science Major</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Core Curriculum</h5>
+                            <ul>
+                                <li>Machine Learning</li>
+                                <li>Statistical Analysis</li>
+                                <li>Database Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technological Baccalaureate -->
+        <div class="card parcours-block" data-toggle="collapse" data-target="#detail2021" aria-expanded="false">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h4 class="card-title">STI2D Technological Baccalaureate</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">2021 - 2023</h6>
+                        <p class="card-text">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Lycée Chaptal
+                        </p>
+                    </div>
+                    <i class="fas fa-chevron-down collapse-icon"></i>
+                </div>
+            </div>
+            <div class="collapse" id="detail2021">
+                <div class="card-footer detail-card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Program Details</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt text-primary"></i> 
+                                    <a href="https://www.google.com/maps/place/Lyc%C3%A9e+Chaptal/@48.8817381,2.3171,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66fb47280d8f1:0xe5a3c9af53725160!8m2!3d48.8817346!4d2.3196749!16s%2Fg%2F120t4923?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                        45, boulevard des Batignolles, 75008 Paris
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </li>
+                                <li><i class="fas fa-microchip text-primary"></i> SIN Specialization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 保持Bootstrap 4依赖不变 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
